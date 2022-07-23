@@ -227,10 +227,4 @@ const deleteBlogsByQuery = async function (req, res) {
         return res.status(500).send({ msg: "Error", error: error.message })
     }
 }
-
-
-module.exports.createBlog = createBlog
-module.exports.getAllBlogs = getAllBlogs
-module.exports.updateBlog = updateBlog
-module.exports.deleteById = deleteById
-module.exports.deleteBlogsByQuery = deleteBlogsByQuery
+module.exports={createBlog,getAllBlogs,updateBlog,deleteById,deleteBlogsByQuery}
